@@ -7,8 +7,8 @@ This stores some linux configuration files.
  - Git
  - Stow
  - Vim
- - Ripgrep https://github.com/BurntSushi/ripgrep
- - Fzf https://github.com/junegunn/fzf
+ - [Ripgrep](https://github.com/BurntSushi/ripgrep)
+ - [Fzf](https://github.com/junegunn/fzf)
 
 ## Usage
  - Clone this in $HOME 
