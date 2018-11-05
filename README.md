@@ -5,8 +5,8 @@ This stores some linux configuration files.
 
 ## Prerequisites
  - Git
- - Stow
- - Vim
+ - [Stow](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
+ - [Vim](https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2)
  - [Ripgrep](https://github.com/BurntSushi/ripgrep)
  - [Fzf](https://github.com/junegunn/fzf)
 
