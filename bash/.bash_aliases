@@ -21,6 +21,14 @@ alias gmf='git merge --ff-only'
 alias gmnf='git merge --no-ff'
 alias gp='git push'
 alias gpom='git push origin master'
+alias gr='git rebase'
+alias grom='git rebase origin master'
+alias gamod='git status | grep modified | sed s/modified:// | xargs git add'
+alias gamod='git status | grep deleted | sed s/deleted:// | xargs git rm'
+alias gsl='git stash list'
+alias gsd='git stash drop'
+alias gspo='git stash pop'
+alias gspu='git stash push'
 
 # ls
 alias lx='ls -lGXB'      # Sort by extension

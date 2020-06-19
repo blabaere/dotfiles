@@ -26,7 +26,19 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+shopts -s histappend
+
+export HISTCONTROL='ignoreboth:ignorespace:ignoredups:erasedups'
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+export HISTTIMEFORMAT='[%F %T]  '
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
+export PATH="/snap/bin:$PATH"
+
+# OPAM configuration
+. /home/blabaere/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

@@ -12,4 +12,3 @@ fi
 # ------------
 source "/home/blabaere/.fzf/shell/key-bindings.bash"
 
-export FZF_DEFAULT_COMMAND='rg --files --hidden'
