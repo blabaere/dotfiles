@@ -2,12 +2,19 @@ execute pathogen#infect()
 
 " ???
 set showcmd
+set showmode
 set mouse=a
+set nobackup
+set cursorline
+set gcr=a:blinkon0
+set scrolloff=3
+set sidescrolloff=5
 
 " USE SYSTEM CLIPBOARD
 set clipboard=unnamed
 
 " TMP FILES
+set backupdir=$HOME/.vim/backup//
 set directory=$HOME/.vim/swp//
 
 
@@ -50,6 +57,8 @@ set foldlevelstart=4
 set hlsearch
 set wildignore+=
 set grepprg=grep\ -nH\ $*\ /dev/null
+set ignorecase
+set smartcase
 
 
 " ------------------------------------------------------------------------------ 

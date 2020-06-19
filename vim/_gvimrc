@@ -1,0 +1,12 @@
+" This is for gVim on Windows
+
+set guifont=Fira\ Code:h12
+set renderoptions=type:directx,renmode:2
+set guioptions=eL
+set background=dark
+
+let g:lightline = { 'colorscheme': 'solarized' }
+colorscheme solarized
+highlight CursorLineNr guifg=#657b83
+
+au GUIEnter * simalt ~x " Makes ViM start in a maximized window"
