@@ -9,6 +9,7 @@ set cursorline
 set gcr=a:blinkon0
 set scrolloff=3
 set sidescrolloff=5
+set termguicolors
 
 " USE SYSTEM CLIPBOARD
 set clipboard=unnamed
@@ -71,8 +72,8 @@ nnoremap <leader>p :Files<CR>
 nnoremap <leader>m :CtrlPMRU<CR>
 nnoremap <leader>r :Rg<CR>
 
-map <C-K> :bprev<CR>
-map <C-J> :bnext<CR>
+map <C-k> :bprev<CR>
+map <C-j> :bnext<CR>
 
 nmap <F3>   :cn!<CR>
 nmap <C-F3> :cp!<CR>
