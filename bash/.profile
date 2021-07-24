@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-shopts -s histappend
+shopt -s histappend
 
 export HISTCONTROL='ignoreboth:ignorespace:ignoredups:erasedups'
 export HISTSIZE=1000
