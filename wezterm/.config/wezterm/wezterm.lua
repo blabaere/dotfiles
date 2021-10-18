@@ -2,7 +2,9 @@ local wezterm = require 'wezterm';
 
 return {
 	font = wezterm.font("Fira Code"),
-	color_scheme = "Solarized Dark - Patched",
+	font_size = 11,
+	--color_scheme = "Tomorrow Night",
+	color_scheme = "Solarized Dark Higher Contrast",
 	debug_key_events = false,
 	keys = {
 		{key="raw:48", mods="CTRL|SHIFT", action=wezterm.action{SplitHorizontal={domain="CurrentPaneDomain"}}},

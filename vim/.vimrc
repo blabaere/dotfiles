@@ -10,8 +10,8 @@ Plugin 'tpope/vim-sensible'
 Plugin 'wellle/targets.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'itchyny/lightline.vim'
-
-" TODO put plugins here ...
+Plugin 'preservim/nerdcommenter'
+Plugin 'lifepillar/vim-solarized8'
 
 call vundle#end()
 
@@ -27,6 +27,10 @@ set gcr=a:blinkon0
 set scrolloff=3
 set sidescrolloff=5
 set termguicolors
+
+" Color theme
+set background=dark
+autocmd vimenter * ++nested colorscheme solarized8
 
 " USE SYSTEM CLIPBOARD
 set clipboard=unnamed
