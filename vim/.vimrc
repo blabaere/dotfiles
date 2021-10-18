@@ -42,6 +42,11 @@ set directory=$HOME/.vim/swp//
 set undofile
 set undodir=$HOME/.vim/undo
 
+" ------------------------------------------------------------------------------ 
+" Cursor line in normal mode, not in insert mode
+" ------------------------------------------------------------------------------ 
+autocmd InsertEnter * set nocursorline
+autocmd InsertLeave * set cursorline
 
 " ------------------------------------------------------------------------------ 
 " TABS
