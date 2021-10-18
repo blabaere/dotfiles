@@ -38,7 +38,9 @@ export HISTTIMEFORMAT='[%F %T]  '
 export PATH="$HOME/.cargo/bin:$PATH"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-export PATH="/snap/bin:$PATH"
+if [ -d "$HOME/.jdks/openjdk-17" ] ; then
+    export JAVA_HOME="$HOME/.jdks/openjdk-17"
+fi
 
 # OPAM configuration
-. /home/blabaere/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+# . /home/blabaere/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

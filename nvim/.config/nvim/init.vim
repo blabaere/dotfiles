@@ -6,9 +6,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'wellle/targets.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'itchyny/lightline.vim'
+
 " TODO put plugins here ...
 
 call vundle#end()
+
 filetype plugin indent on " required
 
 " ???
@@ -69,6 +75,12 @@ set foldlevelstart=4
 set hlsearch
 set wildignore+=
 set grepprg=grep\ -nH\ $*\ /dev/null
+
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+endif
+
 set ignorecase
 set smartcase
 
@@ -79,7 +91,7 @@ set smartcase
 let mapleader=" "
 nnoremap <leader>s :w<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>p :Files<CR>
+nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>m :CtrlPMRU<CR>
 nnoremap <leader>r :Rg<CR>
 
