@@ -29,8 +29,8 @@ fi
 shopt -s histappend
 
 export HISTCONTROL='ignoreboth:ignorespace:ignoredups:erasedups'
-export HISTSIZE=1000
-export HISTFILESIZE=2000
+export HISTSIZE=10000
+export HISTFILESIZE=20000
 export HISTTIMEFORMAT='[%F %T]  '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
