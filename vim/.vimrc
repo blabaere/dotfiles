@@ -27,10 +27,13 @@ set gcr=a:blinkon0
 set scrolloff=3
 set sidescrolloff=5
 set termguicolors
+set hidden
 
 " Color theme
 set background=dark
-autocmd vimenter * ++nested colorscheme solarized8
+colorscheme solarized8
+let g:lightline = { 'colorscheme': 'solarized' }
+"autocmd vimenter * ++nested colorscheme solarized8
 
 " USE SYSTEM CLIPBOARD
 set clipboard=unnamed
