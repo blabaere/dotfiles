@@ -1,0 +1,5 @@
+xterm*font:     *-fixed-*-*-*-11-*
+!xterm*faceName: DejaVu Sans Mono
+xterm*faceName: Fira Code
+xterm*faceSize: 11
+
