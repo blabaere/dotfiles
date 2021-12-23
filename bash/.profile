@@ -35,11 +35,15 @@ export HISTTIMEFORMAT='[%F %T]  '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export PATH="$HOME/.cargo/bin:$PATH"
+if [ -d "$HOME/.cargo/bin" ] ; then
+	export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-if [ -d "$HOME/.jdks/openjdk-17" ] ; then
-    export JAVA_HOME="$HOME/.jdks/openjdk-17"
+if [ -d "$HOME/.jdks/openjdk-17.0.1" ] ; then
+    export JAVA_HOME="$HOME/.jdks/openjdk-17.0.1"
+	export PATH="$JAVA_HOME/bin:$PATH"
 fi
 
 # OPAM configuration
