@@ -23,7 +23,7 @@ set showmode
 set mouse=a
 set nobackup
 set cursorline
-set gcr=a:blinkon0
+"set gcr=a:blinkon0
 set scrolloff=3
 set sidescrolloff=5
 set termguicolors
@@ -110,7 +110,7 @@ nnoremap <leader>r :Rg<CR>
 nmap <C-k> :bprev<CR>
 nmap <C-j> :bnext<CR>
 
-nmap <F3>   :cn!<CR>
-nmap <C-F3> :cp!<CR>
-nmap <C-F7> :execute "noautocmd vimgrep /\\<" . expand("<cword>") . "\\>/j %"<CR>:copen 10<CR>
+nmap <C-n>   :cn!<CR>
+nmap <C-p>   :cp!<CR>
+nmap <leader>f :execute "noautocmd vimgrep /\\<" . expand("<cword>") . "\\>/j %"<CR>:copen 10<CR>
 
