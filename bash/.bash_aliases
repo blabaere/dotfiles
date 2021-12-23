@@ -35,3 +35,5 @@ alias lx='ls -lGXB'      # Sort by extension
 alias lk='ls -lGSr'     # Sort by size, biggest last
 alias lt='ls -lGtr'     # Sort by date, most recent last
 
+# flix
+alias flix='java -jar ~/.config/Code/User/globalStorage/flix.flix/flix.jar'
