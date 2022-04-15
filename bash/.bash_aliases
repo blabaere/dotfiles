@@ -37,3 +37,10 @@ alias lt='ls -lGtr'     # Sort by date, most recent last
 
 # flix
 alias flix='java -jar ~/.config/Code/User/globalStorage/flix.flix/flix.jar'
+
+# fd
+alias fd='fdfind'
+
+# bat
+alias bat='batcat'
+
