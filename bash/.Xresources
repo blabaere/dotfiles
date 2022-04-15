@@ -1,8 +1,6 @@
-xterm*font:     *-fixed-*-*-*-18-*
-!xterm*faceName: DejaVu Sans Mono
-!xterm*faceName: Fira Code
-xterm*faceName: Roboto Mono
-xterm*faceSize: 18
+
+xterm*faceName: Fira Code Regular
+xterm*faceSize: 10
 
 ! Solarize all the things !
 #define S_base03        #002b36
