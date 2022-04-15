@@ -36,7 +36,7 @@ let g:lightline = { 'colorscheme': 'solarized' }
 "autocmd vimenter * ++nested colorscheme solarized8
 
 " USE SYSTEM CLIPBOARD
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " TMP FILES
 set backupdir=$HOME/.vim/backup//
@@ -60,7 +60,7 @@ autocmd InsertLeave * set cursorline
 " ------------------------------------------------------------------------------ 
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 set nowrap
-
+set listchars=eol:¶,tab:>-,space:·
 
 " ------------------------------------------------------------------------------ 
 " LINE NUMBERING
