@@ -60,7 +60,8 @@ autocmd InsertLeave * set cursorline
 " ------------------------------------------------------------------------------ 
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 set nowrap
-set listchars=eol:¶,tab:>-,space:·
+set listchars=eol:¶,tab:>-,space:·,extends:»,precedes:«
+set list
 
 " ------------------------------------------------------------------------------ 
 " LINE NUMBERING
