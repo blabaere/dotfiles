@@ -2,7 +2,7 @@ local wezterm = require 'wezterm';
 
 return {
 	font = wezterm.font("Fira Code"),
-	font_size = 12,
+	font_size = 10,
 	--color_scheme = "Tomorrow Night",
 	color_scheme = "Solarized Dark Higher Contrast",
 	debug_key_events = false,
@@ -21,4 +21,12 @@ return {
 		-- Ctrl + Shift + '=' : move to right tab
 		{key="raw:21", mods="CTRL|SHIFT", action=wezterm.action{ActivateTabRelative=1}},
 	},
+	hide_tab_bar_if_only_one_tab = true,
+	use_fancy_tab_bar = false,
+	window_padding = {
+    	left = 0,
+    	right = 0,
+    	top = 0,
+    	bottom = 0
+  }
 }
