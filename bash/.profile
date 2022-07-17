@@ -36,7 +36,7 @@ export HISTTIMEFORMAT='[%F %T]  '
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 if [ -d "$HOME/.cargo/bin" ] ; then
-	export PATH="$HOME/.cargo/bin:$PATH"
+	. "$HOME/.cargo/env"
 fi
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
