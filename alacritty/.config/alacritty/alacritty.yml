@@ -1,5 +1,11 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
+shell:
+  program: /home/blabaere/.cargo/bin/nu
+  args:
+    - -c
+    - zellij
+
 window:
   startup_mode: Maximized
   dynamic_title: true
