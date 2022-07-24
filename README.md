@@ -4,10 +4,14 @@ My dot files
 This stores some linux configuration files.
 
 ## TODO !!!
+
 There is stuff defined in .profile that gets overwritten by .bashrc
 The file .bashrc is created by the distro, the template is in /etc/skel/.bashrc
 Very bad news, this changes both `HISTxxx` variables and `PROMPT_COMMAND`,
 so this is probably the first thing to fix to make sure the history is recorded correctly.
+
+PROMPT_COMMAND should also not be fiddled with, Elementery uses it to do stuff ...
+See https://github.com/rcaloras/bash-preexec on how to get the history sync on each command
 
 ## More TODO
  - Wezterm ?
@@ -15,6 +19,8 @@ so this is probably the first thing to fix to make sure the history is recorded 
  - Or Kitty ?
  - Use Nushell instead of bash in one of them
  - Use Zellij (but not in Wezterm, of course)
+
+https://blog.thecodewhisperer.com/permalink/from-zero-to-nunit-with-visual-studio-code
 
 ## Prerequisites
  - Git
