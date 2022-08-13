@@ -3,25 +3,59 @@ My dot files
 
 This stores some linux configuration files.
 
-## TODO !!!
+## TODO : Fix bash history !!!
+
+BREAKING NEWS: "Bashhub saves every terminal command entered across all sessions and systems ..."
+https://github.com/rcaloras/bashhub-client
+
+As a user I want my command line history to __just WORK__ !!!
+
+That means when I type a command, it gets added to the history and persisted.
+Even if I turn off the computer after that.
+And it should work when I open several terminals, even from different emulators.
+That means: 
+ - before the command, clear the memory, reload from disk
+ - after the command, (I expect it to be added to the memory), write to disk
 
 There is stuff defined in .profile that gets overwritten by .bashrc
 The file .bashrc is created by the distro, the template is in /etc/skel/.bashrc
 Very bad news, this changes both `HISTxxx` variables and `PROMPT_COMMAND`,
 so this is probably the first thing to fix to make sure the history is recorded correctly.
 
-PROMPT_COMMAND should also not be fiddled with, Elementery uses it to do stuff ...
-See https://github.com/rcaloras/bash-preexec on how to get the history sync on each command
+To make this worse, the fix is probably different for each terminal !
 
-Also investigate this: https://gist.github.com/me7/e19805c0e6f27d9273b0
+### Elementary Terminal
+Elementary puts its own stuff in PROMPT_COMMAND so the usual solution probably does not apply.
+The scripts below allow to define HOOK commands and could be used to get the correct behavior
+https://github.com/rcaloras/bash-preexec
+https://github.com/rcaloras/bash-preexec/blob/master/bash-preexec.sh
+
+### Wezterm
+Wezterm includes a __COPY__ of the above mentioned HOOK scripts !
+See /etc/profile.d/wezterm.sh
+So the fix should first check if bash is running in wezterm before trying to load the HOOKs
+
+### Alacritty
+
+### Nushell : a new hope ?
+Install requires quite some dependancies ...
+https://www.nushell.sh/book/installation.html#build-from-source
+Look at moka in
+ - ~/.config/nushell/env.nu
+ - ~/.config/nushell/config.nu
+
+## TODO bash function instead of alias for git ?
+https://gist.github.com/me7/e19805c0e6f27d9273b0
+
+
 
 ## More TODO
- - Wezterm ?
- - Or Alacritty ?
- - Or Kitty ?
- - Use Nushell instead of bash in one of them
- - Use Zellij (but not in Wezterm, of course)
+ - Terminal: Choose between Wezterm, Alacritty and Kitty
+ - Multiplexer : Wezterm, Zellij or even tmux
+ - Shell : bash, nushell or even PowerShell (?!)
 
+PowerShell ***-History works no better, but there is PSReadLine which really stores everything
+https://docs.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2
 https://blog.thecodewhisperer.com/permalink/from-zero-to-nunit-with-visual-studio-code
 
 ## Prerequisites
