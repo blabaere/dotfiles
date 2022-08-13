@@ -37,8 +37,9 @@ set hidden
 
 " Color theme
 set background=dark
-colorscheme solarized8
-let g:lightline = { 'colorscheme': 'solarized' }
+colorscheme gruvbox8_hard
+"colorscheme solarized8
+"let g:lightline = { 'colorscheme': 'solarized' }
 "autocmd vimenter * ++nested colorscheme solarized8
 
 " USE SYSTEM CLIPBOARD
@@ -155,7 +156,7 @@ let g:gruvbox_filetype_hi_groups = 1
 let g:grubox_plugin_hi_groups = 1
 
 let g:lightline = {
-            \ 'colorscheme': 'solarized',
+            \ 'colorscheme': 'gruvbox',
             \ 'active': {
                     \ 'left': [ [ 'mode', 'paste' ],
                     \           [ 'readonly', 'filename', 'modified', 'git_branch'] ]
