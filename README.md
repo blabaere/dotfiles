@@ -70,6 +70,8 @@ PSReadLine is installed by default, but there does not seem to be any command to
 https://docs.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2  
 
 Just in case:  
+## Even more TODO: use etckeeper ?
+http://etckeeper.branchable.com/
 https://blog.thecodewhisperer.com/permalink/from-zero-to-nunit-with-visual-studio-code  
 
 ## Prerequisites
