@@ -25,7 +25,7 @@ filetype plugin indent on " required
 
 " ???
 set showcmd
-set showmode
+set noshowmode " do not show --INSERT-- in the command bar, already shown in airline
 set mouse=a
 set nobackup
 set cursorline
@@ -150,4 +150,18 @@ nnoremap <silent> <Leader>ll :call matchadd('LineHighlight', '\%'.line('.').'l')
 
 " clear all the highlighted lines
 nnoremap <silent> <Leader>lc :call clearmatches()<CR>
+
+let g:gruvbox_filetype_hi_groups = 1
+let g:grubox_plugin_hi_groups = 1
+
+let g:lightline = {
+            \ 'colorscheme': 'solarized',
+            \ 'active': {
+                    \ 'left': [ [ 'mode', 'paste' ],
+                    \           [ 'readonly', 'filename', 'modified', 'git_branch'] ]
+                    \ },
+                    \ 'component_function': {
+                            \ 'git_branch': 'FugitiveHead'
+                    \ }
+            \ }
 
