@@ -1,3 +1,5 @@
 vim/.vim/bundle/
 vim/.vim/undo/
 vim/.vim/swp/
+nushell/.config/nushell/history.txt
+nushell/.config/nushell/login.nu
