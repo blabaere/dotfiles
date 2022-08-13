@@ -20,7 +20,7 @@ That means:
 ### The problem
 There is important stuff defined in `.profile` that gets overwritten by `.bashrc`.  
 The `.bashrc` file  is created by the distro, from a template in `/etc/skel/.bashrc`.  
-Very bad news, this changes both `HISTxxx` variables and `PROMPT_COMMAND` in a way that breaks history !
+Very bad news, this changes both `HISTxxx` variables and `PROMPT_COMMAND` in a way that breaks history !  
 So this is probably the first thing to fix when setting up a new machine to make sure the history is recorded correctly.
 
 To make this worse, the fix is probably different for each terminal !
