@@ -13,6 +13,8 @@ so this is probably the first thing to fix to make sure the history is recorded 
 PROMPT_COMMAND should also not be fiddled with, Elementery uses it to do stuff ...
 See https://github.com/rcaloras/bash-preexec on how to get the history sync on each command
 
+Also investigate this: https://gist.github.com/me7/e19805c0e6f27d9273b0
+
 ## More TODO
  - Wezterm ?
  - Or Alacritty ?
