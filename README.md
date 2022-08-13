@@ -36,6 +36,16 @@ Wezterm includes a __COPY__ of the above mentioned HOOK scripts !
 See `/etc/profile.d/wezterm.sh` for details.  
 So any fix should first check if bash is running in wezterm before trying to load bash-preexec.  
 With a bit of luck, appending a function call to the HOOKs could work the same in all cases.  
+```bash
+
+#test1() { history -r; }
+flush_and_reload_history() { history -a; history -c; history -r; }
+
+#precmd_functions+=(test1);
+
+preexec_functions+=(flush_and_reload_history);
+
+```
 
 ### Alacritty
 It seems alacritty does nothing special so both setting PROMPT_COMMAND and using bash-preexec should work fine.  
