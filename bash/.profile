@@ -38,6 +38,7 @@ export HISTFILESIZE=20000
 export HISTTIMEFORMAT='[%F %T]  '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 if [ -d "$HOME/.cargo/bin" ] ; then
 	. "$HOME/.cargo/env"
