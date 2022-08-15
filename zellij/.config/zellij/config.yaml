@@ -474,23 +474,35 @@ plugins:
     - path: strider
       tag: strider
       #
-# Solarized Theme
 
-themes:
-  solarized-dark:
-    bg: [0, 43, 54]
-    red: [220, 50, 47]
-    green: [133, 153, 0]
-    yellow: [181, 137, 0]
-    blue: [38, 139, 210]
-    magenta: [211, 54, 130]
-    orange: [203, 75, 22]
-    fg: [253, 246, 227]
-    cyan: [42, 161, 152]
-    black: [7, 54, 66]
-    white: [238, 232, 213]
+#themes:
+#  solarized-dark:
+#    bg: [0, 43, 54]
+#    red: [220, 50, 47]
+#    green: [133, 153, 0]
+#    yellow: [181, 137, 0]
+#    blue: [38, 139, 210]
+#    magenta: [211, 54, 130]
+#    orange: [203, 75, 22]
+#    fg: [253, 246, 227]
+#    cyan: [42, 161, 152]
+#    black: [7, 54, 66]
+#    white: [238, 232, 213]
+#  gruvbox-hard:
+#    bg: "#1d2021"
+#    red: "#cc241f"
+#    green: "#98971a"
+#    yellow: "#d79921"
+#    blue: "#458588"
+#    magenta: "#b16286"
+#    orange: "#d65d0e"
+#    fg: "#ebdbb2"
+#    cyan: "#689d6a"
+#    black: "#282828"
+#    white: "#fbf1c7"
 
-theme: solarized-dark
+theme: gruvbox-dark
+#theme: solarized-dark
 
 # Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 # eg. when terminal window with an active zellij session is closed
