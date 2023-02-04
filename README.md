@@ -25,7 +25,7 @@ So this is probably the first thing to fix when setting up a new machine to make
 
 To make this worse, the fix is probably different for each terminal !  
 
-To understand the problem, read and re-read [this article](https://linuxize.com/post/bashrc-vs-bash-profile/) until you understand it. TLDR: .profile is loaded only when logging (from LighDM or via ssh) and then .bashrc is loaded each time bash starts.  
+To understand the problem, read and re-read [this article](https://linuxize.com/post/bashrc-vs-bash-profile/) until you understand it. TLDR: `.profile` is loaded only at login time (at startup or when remote via ssh) but `.bashrc` is loaded each time bash starts.  
 
 ### Elementary Terminal
 Elementary puts its own stuff in PROMPT_COMMAND so the usual solution probably does not apply.  
