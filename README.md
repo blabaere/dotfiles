@@ -23,7 +23,9 @@ The `.bashrc` file  is created by the distro, from a template in `/etc/skel/.bas
 Very bad news, this changes both `HISTxxx` variables and `PROMPT_COMMAND` in a way that breaks history !  
 So this is probably the first thing to fix when setting up a new machine to make sure the history is recorded correctly.
 
-To make this worse, the fix is probably different for each terminal !
+To make this worse, the fix is probably different for each terminal !  
+
+To understand the problem, read and re-read [this article](https://linuxize.com/post/bashrc-vs-bash-profile/) until you understand it. TLDR: .profile is loaded only when logging (from LighDM or via ssh) and then .bashrc is loaded each time bash starts.  
 
 ### Elementary Terminal
 Elementary puts its own stuff in PROMPT_COMMAND so the usual solution probably does not apply.  
